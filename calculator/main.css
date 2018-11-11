@@ -1,0 +1,1066 @@
+/* CSS */
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+  color: ivory;
+}
+
+/* Global */
+
+.cloak {
+  display: none;
+}
+
+.brndsdR,
+.brndsdL,
+.brndsdRWP,
+.brndsdLWP,
+.brndsdRlead,
+.brndsdLlead,
+.brndsdRopp,
+.brndsdLopp,
+.futurR,
+.futurL,
+.futurRWP,
+.futurLWP,
+.futurRlead,
+.futurLlead,
+.futurRopp,
+.futurLopp,
+.iosR,
+.iosL,
+.iosRWP,
+.iosLWP,
+.iosRlead,
+.iosLlead,
+.iosRopp,
+.iosLopp,
+.classicR,
+.classicL,
+.classicRWP,
+.classicLWP,
+.classicRlead,
+.classicLlead,
+.classicRopp,
+.classicLopp,
+.rickWP,
+.NWOWP {
+   animation-duration: .8s;
+ }
+
+.arrow:hover,
+.brndsd:hover,
+.brndsdlead:hover,
+.brndsdopp:hover,
+.brndsdR:hover,
+.brndsdL:hover,
+.brndsdRlead:hover,
+.brndsdLlead:hover,
+.brndsdRopp:hover,
+.brndsdLopp:hover,
+.futurR:hover,
+.futurL:hover,
+.futurRlead:hover,
+.futurLlead:hover,
+.futurRopp:hover,
+.futurLopp:hover,
+.iosR:hover,
+.iosL:hover,
+.iosRlead:hover,
+.iosLlead:hover,
+.iosRopp:hover,
+.iosLopp:hover,
+.classicR:hover,
+.classicL:hover,
+.classicRlead:hover,
+.classicLlead:hover,
+.classicRopp:hover,
+.classicLopp:hover,
+.reset-a:hover,
+.reset-b:hover,
+.rick:hover,
+.ricklead:hover,
+.rickopp:hover,
+.NWO:hover,
+.NWOlead:hover,
+.NWOopp:hover {
+  cursor: pointer;
+}
+
+#calculator,
+#endIt,
+#comments p,
+.thanos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Selection */
+
+#selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 36px;
+}
+
+.arrow {
+  font-size: 26px;
+  padding: 10px;
+  opacity: 0;
+  animation-name: loadscreen;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+
+#icon {
+  height: 66px;
+  width: 66px;
+  opacity: 0;
+  overflow: hidden;
+  animation-name: loadscreen;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+#calculator svg {
+  height: 66px;
+  width: 66px;
+  position: absolute;
+}
+
+#mainscreen {
+  margin-bottom: 9px;
+  width: 300px;
+  height: 90px;
+  opacity: 0;
+  animation-name: loadscreen;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes loadscreen {
+  100% {
+    opacity: 1;
+  }
+}
+
+#screen,
+#subscreen {
+  padding-left: 10px;
+  padding-right: 26px;
+}
+
+#subscreen {
+  color: gray;
+  height: 30px;
+  font-size: 27px;
+}
+
+#screen {
+  text-align: right;
+  height: 60px;
+  font-size: 50px;
+}
+
+.buttons {
+  width: 66px;
+  height: 66px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  border-width: 0;
+  font-size: 25px;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen, .nineteen {
+  width: 66px;
+  height: 66px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  border-width: 0;
+  font-size: 25px;
+  opacity: 0;
+  animation-name: load;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.one {
+  animation-delay: .6s;
+}
+.two {
+  animation-delay: .9s;
+}
+.three {
+  animation-delay: .2s;
+}
+.four {
+  animation-delay: 1.6s;
+}
+.five {
+  animation-delay: .2s;
+}
+.six {
+  animation-delay: 1.1s;
+}
+.seven {
+  animation-delay: .3s;
+}
+.eight {
+  animation-delay: .4s;
+}
+.nine {
+  animation-delay: .8s;
+}
+.ten {
+  animation-delay: .7s;
+}
+.twelve {
+  animation-delay: 1.4s;
+}
+.thirteen {
+  animation-delay: .1s;
+}
+.fourteen {
+  animation-delay: .5s;
+}
+.fifteen {
+  animation-delay: 1.5s;
+}
+.sixteen {
+  animation-delay: 1s;
+}
+.seventeen {
+  animation-delay: 1.7s;
+}
+.eighteen {
+  animation-delay: 1.2s;
+}
+.nineteen {
+  animation-delay: .9s;
+}
+
+.zero {
+  width: 141px;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Theme Cycle */
+
+/* Icon Cycling */
+.apear,
+.disapear {
+  animation-duration: .4s;
+}
+
+.disapear {
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.apear {
+  animation-name: fadeIn;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Brand Seed  */
+.brndsdWP {
+  background: #1E4337;
+}
+
+.brndsd,
+.brndsdlead,
+.brndsdopp,
+.brndsdR,
+.brndsdL,
+.brndsdRlead,
+.brndsdLlead,
+.brndsdRopp,
+.brndsdLopp {
+  border-radius: 40px;
+}
+
+.brndsd,
+.brndsdR,
+.brndsdL {
+  background: #D4D4D4;
+  color: #1E4337;
+}
+
+.brndsd:hover,
+.brndsdR:hover,
+.brndsdL:hover {
+  background: #95D6D5;
+}
+
+.brndsdlead,
+.brndsdopp {
+  color: #D4D4D4;
+}
+
+.brndsdlead,
+.brndsdRlead,
+.brndsdLlead {
+  background: #6C568A;
+}
+
+.brndsdlead:hover,
+.brndsdRlead:hover,
+.brndsdLlead:hover {
+  background: #A189C3;
+}
+
+.brndsdopp,
+.brndsdRopp,
+.brndsdLopp {
+  background: #377B62;
+}
+
+.brndsdoppsel,
+.brndsdRoppsel,
+.brndsdLoppsel {
+  background: #48B78E;
+}
+
+.brndsdopp:hover,
+.brndsdRopp:hover,
+.brndsdLopp:hover {
+  background: #48B78E;
+}
+
+.brndsdRlead,
+.brndsdLlead,
+.brndsdRopp,
+.brndsdLopp {
+  color: #D4D4D4;
+}
+
+.brndsdRWP,
+.brndsdLWP {
+  background: #1E4337;
+}
+
+.brndsdRWP {
+  animation-name: brndsdRightWP;
+}
+
+@keyframes brndsdRightWP {
+  0% {
+    background: #CCC;
+  }
+}
+
+.brndsdLWP {
+  animation-name: brndsdLeftWP;
+}
+
+@keyframes brndsdLeftWP {
+  0% {
+    background: #0318F5;
+  }
+}
+
+.brndsdR {
+  animation-name: brndsdMainButtonsRight;
+}
+
+@keyframes brndsdMainButtonsRight {
+  0% {
+    border-radius: 10px;
+    background: #EEE;
+    color: #000;
+  }
+}
+
+.brndsdL {
+  animation-name: brndsdMainButtonsLeft;
+}
+
+@keyframes brndsdMainButtonsLeft {
+  0% {
+    border-radius: 0px;
+    background: #FFF;
+    color: #0318F5;
+  }
+}
+
+.brndsdRlead {
+  animation-name: brndsdLeadButtonsRight;
+}
+
+@keyframes brndsdLeadButtonsRight {
+  0% {
+    border-radius: 10px;
+    background: #444;
+    color: #CCC;
+  }
+}
+
+.brndsdLlead {
+  animation-name: brndsdLeadButtonsLeft;
+}
+
+@keyframes brndsdLeadButtonsLeft {
+  0% {
+    border-radius: 0px;
+    background: #C34831;
+    color: #FFF;
+  }
+}
+
+.brndsdRopp {
+  animation-name: brndsdOppButtonsRight;
+}
+
+@keyframes brndsdOppButtonsRight {
+  0% {
+    border-radius: 10px;
+    background: #C34831;
+    color: #CCC;
+  }
+}
+
+.brndsdLopp {
+  animation-name: brndsdOppButtonsLeft;
+}
+
+@keyframes brndsdOppButtonsLeft {
+  0% {
+    border-radius: 0px;
+    background: #FBE84F;
+    color: #0318F5;
+  }
+}
+
+/* The Futur */
+.futurR,
+.futurL,
+.futurRWP,
+.futurLWP,
+.futurRlead,
+.futurLlead,
+.futurRopp,
+.futurLopp {
+  border-radius: 0px;
+}
+.futurR,
+.futurL,
+.futurRopp,
+.futurLopp {
+  color: #0318F5;
+}
+
+.futurRWP,
+.futurLWP {
+  background: #0318F5;
+}
+
+.futurRWP {
+  animation-name: futurRightWP;
+}
+
+@keyframes futurRightWP {
+  0% {
+    background: #1E4337;
+  }
+}
+
+.futurLWP {
+  animation-name: futurLeftWP;
+}
+
+@keyframes futurLeftWP {
+  0% {
+    background: #000;
+  }
+}
+
+.futurR,
+.futurL {
+  background: #FFF;
+}
+
+.futurR {
+  animation-name: futurMainButtonsRight;
+}
+
+@keyframes futurMainButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #D4D4D4;
+    color: #1E4337;
+  }
+}
+
+.futurL {
+  animation-name: futurMainButtonsLeft;
+}
+
+@keyframes futurMainButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #2C2C2C;
+    color: #FFF;
+  }
+}
+
+.futurRlead,
+.futurLlead {
+  background: #C34831;
+  color: #FFF;
+}
+
+.futurRlead {
+  animation-name: futurLeadButtonsRight;
+}
+
+@keyframes futurLeadButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #6C568A;
+    color: #D4D4D4;
+  }
+}
+
+.futurLlead {
+  animation-name: futurLeadButtonsLeft;
+}
+
+@keyframes futurLeadButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #828282;
+    color: #000;
+  }
+}
+
+.futurRopp,
+.futurLopp {
+  background: #FBE84F;
+}
+
+.futurRopp {
+  animation-name: futurOppButtonsRight;
+}
+
+@keyframes futurOppButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #377B62;
+    color: #D4D4D4;
+  }
+}
+
+.futurLopp {
+  animation-name: futurOppButtonsLeft;
+}
+
+@keyframes futurOppButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #EF9838;
+    color: #FFF;
+  }
+}
+
+.futurR:hover,
+.futurL:hover {
+  background: #D6D6D6;
+}
+
+.futurRlead:hover,
+.futurLlead:hover {
+  background: #D09387;
+}
+
+.futurRoppsel,
+.futurLoppsel {
+  background: #FB984F;
+}
+
+.futurRopp:hover,
+.futurLopp:hover {
+  background: #FB984F;
+}
+
+/* iOS */
+
+.iosR,
+.iosL,
+.iosRlead,
+.iosLlead,
+.iosRopp,
+.iosLopp {
+  border-radius: 40px;
+}
+
+.iosR,
+.iosL,
+.iosRopp,
+.iosLopp {
+  color: #FFF;
+}
+
+.iosRWP,
+.iosLWP {
+  background: #000;
+}
+
+.iosRWP {
+  animation-name: iosRightWP;
+}
+
+@keyframes iosRightWP {
+  0% {
+    background: #0318F5;
+  }
+}
+
+.iosLWP {
+  animation-name: iosLeftWP;
+}
+
+@keyframes iosLeftWP {
+  0% {
+    background: #CCC;
+  }
+}
+
+.iosR,
+.iosL {
+  background: #2C2C2C;
+}
+
+.iosR {
+  animation-name: iosMainButtonsRight;
+}
+
+@keyframes iosMainButtonsRight {
+  0% {
+    border-radius: 0px;
+    background: #FFF;
+    color: #0318F5;
+  }
+}
+
+.iosL {
+  animation-name: iosMainButtonsLeft;
+}
+
+@keyframes iosMainButtonsLeft {
+  0% {
+    border-radius: 10px;
+    background: #EEE;
+    color: #000;
+  }
+}
+
+.iosRlead,
+.iosLlead {
+  background: #828282;
+  color: #FFF;
+}
+
+.iosRlead {
+  animation-name: iosLeadButtonsRight;
+}
+
+@keyframes iosLeadButtonsRight {
+  0% {
+    border-radius: 0px;
+    background: #C34831;
+    color: #FFF;
+  }
+}
+
+.iosLlead {
+  animation-name: iosLeadButtonsLeft;
+}
+
+@keyframes iosLeadButtonsLeft {
+  0% {
+    border-radius: 10px;
+    background: #444;
+    color: #CCC;
+  }
+}
+
+.iosRopp,
+.iosLopp {
+  background: #EF9838;
+}
+
+.iosRopp {
+  animation-name: iosOppButtonsRight;
+}
+
+@keyframes iosOppButtonsRight {
+  0% {
+    border-radius: 0px;
+    background: #FBE84F;
+    color: #0318F5;
+  }
+}
+
+.iosLopp {
+  animation-name: iosOppButtonsLeft;
+}
+
+@keyframes iosOppButtonsLeft {
+  0% {
+    border-radius: 10px;
+    background: #C34831;
+    color: #CCC;
+  }
+}
+
+.iosR:hover,
+.iosL:hover {
+  background: #828282;
+}
+
+.iosRlead:hover,
+.iosLlead:hover {
+  background: #BDBDBD;
+}
+
+.iosRoppsel,
+.iosLoppsel {
+  background: #FFF;
+  color: #EF9838;
+}
+
+.iosRopp:hover,
+.iosLopp:hover {
+  background: #E0AA6E;
+}
+
+/* Classic */
+
+.classicR,
+.classicL,
+.classicRlead,
+.classicLlead,
+.classicRopp,
+.classicLopp {
+  border-radius: 10px;
+}
+
+.classicRlead,
+.classicLlead,
+.classicRopp,
+.classicLopp {
+  color: #CCC;
+}
+
+.classicRWP,
+.classicLWP {
+  background: #CCC;
+}
+
+.classicRWP {
+  animation-name: classicRightWP;
+}
+
+@keyframes classicRightWP {
+  0% {
+    background: #000;
+  }
+}
+
+.classicLWP {
+  animation-name: classicLeftWP;
+}
+
+@keyframes classicLeftWP {
+  0% {
+    background: #1E4337;
+  }
+}
+
+.classicR,
+.classicL {
+  background: #EEE;
+  color: #000;
+}
+
+.classicR {
+  animation-name: classicMainButtonsRight;
+}
+
+@keyframes classicMainButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #2C2C2C;
+    color: #FFF;
+  }
+}
+
+.classicL {
+  animation-name: classicMainButtonsLeft;
+}
+
+@keyframes classicMainButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #D4D4D4;
+    color: #1E4337;
+  }
+}
+
+.classicRlead,
+.classicLlead {
+  background: #444;
+}
+
+.classicRlead {
+  animation-name: classicLeadButtonsRight;
+}
+
+@keyframes classicLeadButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #828282;
+    color: #FFF;
+  }
+}
+
+.classicLlead {
+  animation-name: classicLeadButtonsLeft;
+}
+
+@keyframes classicLeadButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #6C568A;
+    color: #D4D4D4;
+  }
+}
+
+.classicRopp,
+.classicLopp {
+  background: #C34831;
+}
+
+.classicRopp {
+  animation-name: classicOppButtonsRight;
+}
+
+@keyframes classicOppButtonsRight {
+  0% {
+    border-radius: 40px;
+    background: #EF9838;
+    color: #FFF;
+  }
+}
+
+.classicLopp {
+  animation-name: classicOppButtonsLeft;
+}
+
+@keyframes classicOppButtonsLeft {
+  0% {
+    border-radius: 40px;
+    background: #377B62;
+    color: #D4D4D4;
+  }
+}
+
+.classicR:hover,
+.classicL:hover {
+  background: #C6C6C6;
+}
+
+.classicRlead:hover,
+.classicLlead:hover {
+  background: #686868;
+}
+
+.classicRoppsel,
+.classicLoppsel {
+  background: #D87964;
+}
+
+.classicRopp:hover,
+.classicLopp:hover {
+  background: #D87964;
+}
+
+/* Destroy */
+.blackout {
+  background: #000;
+}
+
+#endIt {
+  width: 300px;
+  height: 576px;
+}
+
+.reset-a,
+.reset-b {
+  font-size: 35px;
+  padding: 15px 19px;
+  border-radius: 10px;
+  opacity: 0;
+  animation-name: resetButton;
+  animation-duration: 1s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+.reset-a {
+  background: #94AFBF;
+}
+
+.reset-b {
+  background: #390000;
+  color: #DB9741;
+}
+
+@keyframes resetButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#first,
+#second,
+#third,
+#fourth {
+  width: 300px;
+  font-size: 35px;
+  opacity: 0;
+  animation-name: commentLoop;
+  animation-duration: 2.5s;
+}
+
+#second {
+  animation-delay: 2.5s;
+}
+
+#third {
+  animation-delay: 5s;
+}
+
+#fourth {
+  animation-delay: 7.5s;
+}
+
+@keyframes commentLoop {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.rickWP {
+  background: #94AFBF;
+  animation-name: rickwallpaper;\
+}
+
+@keyframes rickwallpaper {
+  0% {
+    background: #000;
+  }
+}
+
+.rick,
+.ricklead,
+.rickopp {
+  background: #FFF;
+}
+
+.rickoppsel {
+  background: lightgreen;
+}
+
+
+.NWOWP {
+  background: #390000;
+  animation-name: nwo;
+}
+
+@keyframes nwo {
+  0% {
+    background: #000;
+  }
+}
+
+.NWO,
+.NWOlead,
+.NWOopp {
+  border-radius: 40px;
+  color: #390000;
+  background: #DB9741;
+}
+
+.NWOoppsel {
+  background: ivory;
+}
+
+.thanos {
+  opacity: 0;
+  animation-name: thanos;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+  animation-duration: 2.5s;
+}
+
+@keyframes thanos {
+  100%{
+    opacity: 1;
+  }
+}
